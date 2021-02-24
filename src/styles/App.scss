@@ -1,0 +1,10 @@
+.App {
+  position: relative;
+  height: 100vh;
+  background: url("../assets/image/wall.jpg") center/cover no-repeat;
+  @each $number in top,bottom,left,right{
+    .#{$number}{
+      #{$number}: 0;
+    }
+  }
+}
